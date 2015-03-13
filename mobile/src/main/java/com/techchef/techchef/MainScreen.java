@@ -7,10 +7,11 @@ import android.view.MenuItem;
 
 
 public class MainScreen extends ActionBarActivity {
-    // this is Mohammad AL-Rashed, Happy Coding my wonderful Dev team :)
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // this is a comment
+        // this is Mohammad AL-Rashed, Happy Coding my wonderful Dev team :)
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_screen);
     }
