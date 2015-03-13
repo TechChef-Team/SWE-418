@@ -13,6 +13,7 @@ public class MainScreen extends ActionBarActivity {
         // this is a co
         // this is Mohammad AL-Rashed, Happy Coding my wonderful Dev team
         //this is my second comment
+        // h
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_screen);
     }
