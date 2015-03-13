@@ -10,6 +10,7 @@ public class MainScreen extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // this is a comment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_screen);
     }
