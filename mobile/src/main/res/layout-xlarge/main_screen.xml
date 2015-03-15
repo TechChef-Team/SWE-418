@@ -15,7 +15,8 @@ android:paddingTop="@dimen/activity_vertical_margin">
     android:id="@+id/imageButton"
     android:layout_alignParentTop="true"
     android:layout_alignParentStart="true"
-    android:src="@mipmap/customer"/>
+    android:src="@mipmap/customer"
+    android:onClick="showCustomerView"/>
 
 
 <ImageButton
