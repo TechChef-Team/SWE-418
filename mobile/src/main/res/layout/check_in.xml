@@ -14,5 +14,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
-        android:src="@mipmap/napkin"/>
+        android:src="@mipmap/napkin"
+        android:onClick="showMenuView"/>
 </RelativeLayout>

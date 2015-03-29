@@ -1,23 +1,30 @@
 package com.techchef.techchef;
 
+import android.annotation.TargetApi;
+import android.graphics.Outline;
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewOutlineProvider;
+import android.widget.Button;
+import android.widget.Toast;
 
 
-public class Menu extends ActionBarActivity {
+public class MenuView extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
-    }
 
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_menu, menu);
         return true;
     }
@@ -35,5 +42,10 @@ public class Menu extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void showOrderView(View v)
+    {
+        Toast.makeText(this,"This is order content", Toast.LENGTH_SHORT).show();
     }
 }
