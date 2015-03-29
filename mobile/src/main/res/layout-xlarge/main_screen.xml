@@ -27,7 +27,8 @@ android:paddingTop="@dimen/activity_vertical_margin">
     android:layout_alignTop="@+id/imageButton"
     android:layout_toEndOf="@+id/imageButton"
     android:layout_marginStart="100dp"
-    android:src="@mipmap/waiter"/>
+    android:src="@mipmap/waiter"
+    android:onClick="showLogInView"/>
 
 <ImageButton
     style="?android:borderlessButtonStyle"
@@ -37,7 +38,8 @@ android:paddingTop="@dimen/activity_vertical_margin">
     android:layout_alignTop="@+id/imageButton2"
     android:layout_toEndOf="@+id/imageButton2"
     android:layout_marginStart="100dp"
-    android:src="@mipmap/chef"/>
+    android:src="@mipmap/chef"
+    android:onClick="showLogInView"/>
 
 
 
