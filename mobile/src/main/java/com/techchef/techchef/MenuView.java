@@ -5,6 +5,7 @@ import android.graphics.Outline;
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -46,6 +47,7 @@ public class MenuView extends ActionBarActivity {
 
     public void showOrderView(View v)
     {
-        Toast.makeText(this,"This is order content", Toast.LENGTH_SHORT).show();
+        CardView cardView = (CardView)findViewById(R.id.order_content);
+        cardView.setVisibility(View.VISIBLE);
     }
 }

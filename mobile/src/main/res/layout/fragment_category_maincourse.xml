@@ -16,8 +16,7 @@
     android:id="@+id/mainCourse_list"
     android:divider="@color/divider_color"
     android:dividerHeight="1px"
-    android:choiceMode="singleChoice"
-    >
+    android:choiceMode="singleChoice">
     </ListView>
 
 </LinearLayout>

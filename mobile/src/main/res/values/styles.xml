@@ -13,12 +13,9 @@
     <style name="MyActionBar"
         parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/brand_color</item>
-
         <!-- Support library compatibility -->
         <item name="background">@color/brand_color</item>
     </style>
-
-
 
     <style name="menu_labels_style">
         <item name="android:background">@drawable/fab_label_background</item>

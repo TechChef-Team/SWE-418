@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.techchef.techchef.MenuView"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    >
 
     <HorizontalScrollView
         android:layout_width="fill_parent"
@@ -57,30 +58,39 @@
 
     </HorizontalScrollView>
 
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/order_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="790dp"
+        android:layout_height="680dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="6dp"
+        card_view:cardCornerRadius="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="no no "/>
+    </android.support.v7.widget.CardView>
 
 
     <com.getbase.floatingactionbutton.FloatingActionButton
         android:id="@+id/order_button"
         android:layout_width="56dp"
         android:layout_height="56dp"
-
         fab:fab_icon="@mipmap/ic_action_new"
         fab:fab_colorNormal="@color/pink"
         fab:fab_colorPressed="@color/pink_pressed"
-
         android:onClick="showOrderView"
-
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginEnd="16dp"/>
-
-
-
-
-
-
 
 </RelativeLayout>
