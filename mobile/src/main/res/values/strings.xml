@@ -18,5 +18,8 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_customer_order_view">Current Order</string>
+    <string name="title_activity_customer_site">TechChef</string>
+    <string name="title_activity_rate_service_view">Rate Services</string>
 
 </resources>

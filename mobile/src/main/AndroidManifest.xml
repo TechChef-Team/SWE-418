@@ -38,6 +38,22 @@
             android:name=".MenuView"
             android:label="@string/title_activity_menu" >
         </activity>
+        <activity
+            android:name=".CustomerOrderView"
+            android:label="@string/title_activity_customer_order_view" >
+        </activity>
+        <activity
+            android:name=".CustomerSite"
+            android:label="@string/title_activity_customer_site" >
+        </activity>
+        <activity
+            android:name=".RateServiceView"
+            android:label="@string/title_activity_rate_service_view"
+            android:parentActivityName=".CustomerSite" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.techchef.techchef.CustomerSite" />
+        </activity>
     </application>
 
 </manifest>

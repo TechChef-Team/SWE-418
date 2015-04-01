@@ -1,33 +1,26 @@
 package com.techchef.techchef;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
-import android.graphics.Outline;
-import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewOutlineProvider;
-import android.widget.Button;
-import android.widget.Toast;
 
 
-public class MenuView extends ActionBarActivity {
+public class CustomerSite extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu);
-
-
+        setContentView(R.layout.customer_site);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_menu, menu);
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_customer_site, menu);
         return true;
     }
 
@@ -46,22 +39,17 @@ public class MenuView extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void showOrderView(View v)
-    {
-        CardView cardView = (CardView)findViewById(R.id.order_content);
-        cardView.setVisibility(View.VISIBLE);
-    }
-
-    public void hideOrderContentView(View v)
-    {
-        CardView cardView = (CardView)findViewById(R.id.order_content);
-        cardView.setVisibility(View.GONE);
-    }
-
-    public void customerPlaceOrder(View v)
-    {
-        Intent intent = new Intent(this,CustomerOrderView.class);
+    public void showMenuView(View v) {
+        Intent intent = new Intent(this, MenuView.class);
         startActivity(intent);
+    }
+
+    public void showRateuView(View v) {
+        Intent intent = new Intent(this, RateServiceView.class);
+        startActivity(intent);
+    }
+
+    public void checkout(View v) {
 
     }
 }

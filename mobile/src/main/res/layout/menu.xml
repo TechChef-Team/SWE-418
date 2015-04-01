@@ -63,19 +63,111 @@
         android:id="@+id/order_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_width="790dp"
-        android:layout_height="680dp"
+        android:layout_width="760dp"
+        android:layout_height="700dp"
         card_view:cardUseCompatPadding="true"
         card_view:cardElevation="6dp"
         card_view:cardCornerRadius="4dp"
         android:visibility="gone">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="204dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/waiter_take_order"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:text="Order Receipt"
+                    android:textSize="24sp"/>
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/order_content_list"
+                        android:divider="@color/divider_color"
+                        android:dividerHeight="1px"
+                        android:choiceMode="singleChoice">
+                    </ListView>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/order_content_hide"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:src="@mipmap/ic_action_cancel"
+                android:onClick="hideOrderContentView"/>
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/place_order_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            fab:fab_icon="@mipmap/ic_action_forward"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed"
+            android:onClick="customerPlaceOrder"
+            android:layout_marginTop="167dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"/>
 
         <TextView
-            android:id="@+id/info_text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="no no "/>
+            android:id="@+id/order_cost"
+            android:text="46,00$"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginEnd="48dp"/>
+        <TextView
+
+            android:text="Total :"
+            android:textSize="30sp"
+            android:textColor="@color/brand_color"
+            android:layout_marginRight="190dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
     </android.support.v7.widget.CardView>
 
 
